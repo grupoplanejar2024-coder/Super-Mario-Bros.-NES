@@ -77,7 +77,8 @@
             height: 195px;
             margin-left: 32px;
             background-color: #000;
-            background-image: url('Super%20Mario%20Bros.%20(World).jpg');
+            /* Apontando para o arquivo .png exato do repositório */
+            background-image: url('Super%20Mario%20Bros.%20(World).png');
             background-size: 235% auto;
             background-position: 96% center;
             border-radius: 4px 4px 0 0;
@@ -224,8 +225,8 @@
             window.EJS_startOnLoaded = true;
             window.EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
             
-            // URL codificada para evitar "Erro de Rede" por conta de espaços e parênteses no nome do arquivo
-            window.EJS_gameUrl = encodeURI('Super Mario Bros. (World).nes');
+            // Nome exato da ROM salva no GitHub: "Mario Bros. (World).nes"
+            window.EJS_gameUrl = 'Mario%20Bros.%20(World).nes';
 
             var script = document.createElement('script');
             script.src = 'https://cdn.emulatorjs.org/stable/data/loader.js';
